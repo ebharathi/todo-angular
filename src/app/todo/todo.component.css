@@ -1,0 +1,51 @@
+.parent{
+   display: flex;
+   flex-direction: column;
+}
+.a{
+    flex: 1;
+    padding: 20px 0px;
+    display: flex;
+}
+.a input{
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.a button{
+    color:white;
+    background-color: black;
+    margin:0 5px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.a button:hover{
+    color: black;
+    background-color: white;
+}
+.b{
+   flex: 1;
+   margin: 0p 30px;
+}
+.b-head{
+    margin:0px 5px;
+}
+.list-item{
+    font-size: 13px;
+    display: flex;
+    padding: 1px 10px;
+    border-bottom: 1px solid grey;
+}
+.list-item a{
+    flex: 5;
+}
+.list-item .b,.c{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-item button{
+    margin: 0px 10px;
+    cursor: pointer;
+}

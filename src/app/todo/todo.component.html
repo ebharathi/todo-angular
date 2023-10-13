@@ -1,0 +1,16 @@
+<div class="parent">
+    <div class="a">
+        <input #item type="text" placeholder="Enter Item"/>
+        <br/>
+        <button (click)="onAdd(item.value)">ADD</button>
+    </div>
+    <div class="b">
+           <div class="b-head">
+             ITEM LIST
+           </div>
+           <div *ngFor="let item of items" class="list-item">
+               <div class="a"><span>{{item}}</span></div>              
+               <div class="b"><button class="modify">Modify</button><button class="delete">Delete</button></div>              
+           </div>
+    </div>
+</div>
